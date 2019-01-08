@@ -14,8 +14,8 @@ If you are a developer, you can join our Developer Community on [Slack](https://
 This repository is not suitable for general Paystack support. Please use the issue tracker for bug reports and feature requests directly related to this plugin. For general support, you can reach out by 
 
 * sending a message from [our website](https://paystack.com/contact).
-* posting an issues on the plugin [support forum](https://wordpress.org/support/plugin/[paystack-sprout-invoices/](https://wordpress.org/plugins/paystack-sprout-invoices)).
+* posting an issues on the plugin [support forum](https://wordpress.org/support/plugin/paystack-sprout-invoices).
 
-## Contributing to Payment Forms for Paystack
+## Contributing to Paystack Gateway for Sprout Invoices
 
-If you have a patch or have stumbled upon an issue with the Paystack Gateway for Sprout Invoices plugin, you can contribute this back to the code. Please read our [contributor guidelines](https://github.com/PaystackHQ/paystack-gateway-for-sprout-invoices/blob/master/.github/CONTRIBUTING.md) for more information how you can do this.
+If you have a patch or have stumbled upon an issue with the Paystack Gateway for Sprout Invoices plugin, you can contribute this back to the code. Please read our [contributor guidelines](https://github.com/PaystackHQ/paystack-gateway-for-sprout-invoices/CONTRIBUTING.md) for more information how you can do this.

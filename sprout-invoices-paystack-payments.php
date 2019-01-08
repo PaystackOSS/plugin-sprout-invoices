@@ -3,8 +3,8 @@
 Plugin Name: Sprout Invoices Add-on - Paystack Payments
 Plugin URI: https://paystack.com/
 Description: Accept Payments with Paystack for Sprout Invoices.
-Author: KendysonD
-Version: 1.0
+Author: Paystack
+Version: 2.0
 Author URI: https://paystack.com
 */
 
@@ -20,16 +20,7 @@ define('SI_ADDON_PAYSTACK_URL', plugins_url('', __FILE__));
 
 // Load up the processor before updates
 add_action('si_payment_processors_loaded', 'si_load_paystack');
-function si_load_paystack() 
+function si_load_paystack()
 {
     include_once 'SI_Paystack.php';
-}
-
-// Load up the updater after si is completely loaded
-add_action('sprout_invoices_loaded', 'si_load_paystack_updates');
-function si_load_paystack_updates() 
-{
-    if (class_exists('SI_Updates') ) {
-        include_once 'SI_Updates.php';
-    }
 }

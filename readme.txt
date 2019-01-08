@@ -1,10 +1,10 @@
 === Paystack Gateway for Sprout Invoices ===
-Contributors: kendysond
+Contributors: kendysond, dancameron
 Donate link: https://paystack.com/demo
 Tags: sprout, paystack, recurrent payments, nigeria, mastercard, visa, target, Naira, payments, verve
 Requires at least: 3.1
 Tested up to: 4.9.1
-Stable tag: 1.0.0
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,11 @@ The manual installation method involves downloading our payment plugin and uploa
 = Updating =
  
 Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
+
+== Upgrade Notice ==
+ 
+= 2.0 =
+This version works with version 18 and above of Sprout Invoices. 
  
 == Frequently Asked Questions ==
  
@@ -67,7 +72,7 @@ You can find help and information on Paystack on our [Help Desk](https://paystac
  
 = Where can I get support or talk to other users? =
  
-If you get stuck, you can ask for help in the [WooCommerce Plugin Forum](https://wordpress.org/support/plugin/paystack-sprout-invoices). You can also directly email support@paystack.com for assistance.
+If you get stuck, you can ask for help in the [Paystack Gateway for Sprouts Plugin Forum](https://wordpress.org/support/plugin/paystack-sprout-invoices). You can also directly email support@paystack.com for assistance.
  
 = Paystack Gateway for Sprout Invoices is awesome! Can I contribute? =
  
