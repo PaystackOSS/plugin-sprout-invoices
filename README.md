@@ -1,20 +1,30 @@
-<p align="center"><a href="https://paystack.com/"><img src="https://raw.githubusercontent.com/PaystackHQ/paystack-gateway-for-sprout-invoices/master/banner.png" alt="Payment Forms for Paystack"></a></p>
+<p align="center"><a href="https://paystack.com/"><img src="https://github.com/PaystackHQ/plugin-sprout-invoices/blob/master/.paystack/assets/banner.png?raw=true" alt="Payment Forms for Paystack"></a></p>
 
 # Paystack Gateway for Sprout Invoices
 
-Welcome to the **Paystack Gateway for Sprout Invoices** repository on GitHub. Here you can browse the source, look at open issues and keep track of development. 
+Welcome to the Paystack Gateway for Sprout Invoices repository on GitHub. 
 
-If you are a developer, you can join our Developer Community on [Slack](https://slack.paystack.com).
+The **Paystack Gateway for Sprout Invoices** plugin provides a payment option for the popular Client Invoicing by Sprout Invoices – Easy Estimates and Invoices for WordPress plugin.
+
+Here you can browse the source, look at open issues and keep track of development. 
+
+## Installation
+
+1. Install the [Paystack Gateway for Sprout Invoices](https://wordpress.org/plugins/paystack-sprout-invoices/) via the Plugins section of your WordPress Dashboard.
 
 ## Documentation
 * [Paystack Documentation](https://developers.paystack.co/v1.0/docs/)
 * [Paystack Helpdesk](https://paystack.com/help)
 
 ## Support
-This repository is not suitable for general Paystack support. Please use the issue tracker for bug reports and feature requests directly related to this plugin. For general support, you can reach out by 
+ For bug reports and feature requests directly related to this plugin, please use the [issue tracker](https://github.com/PaystackHQ/plugin-sprout-invoices/issues). 
 
-* sending a message from [our website](https://paystack.com/contact).
-* posting an issues on the plugin [support forum](https://wordpress.org/support/plugin/paystack-sprout-invoices).
+For questions related to using the plugin, please post an inquiry to the plugin [support forum](https://wordpress.org/support/plugin/paystack-sprout-invoices).
+
+For general support or questions about your Paystack account, you can reach out by sending a message from [our website](https://paystack.com/contact).
+
+## Community
+If you are a developer, please join our Developer Community on [Slack](https://slack.paystack.com).
 
 ## Contributing to Paystack Gateway for Sprout Invoices
 
