@@ -1,4 +1,4 @@
-<p align="center"><a href="https://paystack.com/"><img src="https://raw.githubusercontent.com/PaystackHQ/wordpress-payment-forms-for-paystack/master/icon.png" alt="Payment Forms for Paystack"></a></p>
+<p align="center"><a href="https://paystack.com/"><img src="https://github.com/PaystackHQ/plugin-sprout-invoices/blob/master/.paystack/assets/banner.png?raw=true" alt="Payment Forms for Paystack"></a></p>
 
 # Paystack Gateway for Sprout Invoices
 
@@ -26,6 +26,6 @@ For general support or questions about your Paystack account, you can reach out 
 ## Community
 If you are a developer, please join our Developer Community on [Slack](https://slack.paystack.com).
 
-## Contributing to Payment Forms for Paystack
+## Contributing to Paystack Gateway for Sprout Invoices
 
-If you have a patch or have stumbled upon an issue with the Paystack Gateway for Sprout Invoices plugin, you can contribute this back to the code. Please read our [contributor guidelines](https://github.com/PaystackHQ/plugin-sprout-invoices/blob/master/.github/CONTRIBUTING.md) for more information how you can do this.
+If you have a patch or have stumbled upon an issue with the Paystack Gateway for Sprout Invoices plugin, you can contribute this back to the code. Please read our [contributor guidelines](https://github.com/PaystackHQ/paystack-gateway-for-sprout-invoices/CONTRIBUTING.md) for more information how you can do this.
