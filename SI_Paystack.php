@@ -263,6 +263,13 @@ class SI_Paystack extends SI_Credit_Card_Processors
                 'currency' => self::get_currency_code($invoice_id),
                 'amount' => self::convert_money_to_cents($payment_amount),
                 'ref' => $invoice_id.'_'.time(),
+                'metadata' => array('custom_fields' => array(
+                    array(
+                        "display_name"=>"Plugin",
+                        "variable_name"=>"plugin",
+                        "value"=>"sprout-invoice"
+                    )
+                )) 
 
             );
 
