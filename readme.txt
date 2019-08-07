@@ -59,10 +59,11 @@ The manual installation method involves downloading our payment plugin and uploa
  
 Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
 
-== Upgrade Notice ==
-
+== Change Log ==
 = 2.1 = 
 Added plugin metrics tracker
+
+== Upgrade Notice ==
  
 = 2.0 =
 This version works with version 18 and above of Sprout Invoices. 
