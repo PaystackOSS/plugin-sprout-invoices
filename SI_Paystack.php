@@ -1,5 +1,43 @@
 <?php
 
+class sprout_paystack_plugin_tracker {
+    var $public_key;
+    var $plugin_name;
+    function __construct($plugin, $pk){
+        //configure plugin name
+        //configure public key
+        $this->plugin_name = $plugin;
+        $this->public_key = $pk;
+    }
+
+   
+
+    function log_transaction_success($trx_ref){
+        //send reference to logger along with plugin name and public key
+        $url = "https://plugin-tracker.paystackintegrations.com/log/charge_success";
+
+        $fields = [
+            'plugin_name'  => $this->plugin_name,
+            'transaction_reference' => $trx_ref,
+            'public_key' => $this->public_key
+        ];
+
+        $fields_string = http_build_query($fields);
+
+        $ch = curl_init();
+
+        curl_setopt($ch,CURLOPT_URL, $url);
+        curl_setopt($ch,CURLOPT_POST, true);
+        curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
+
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER, true); 
+
+        //execute post
+        $result = curl_exec($ch);
+        //  echo $result;
+    }
+}
+
 class SI_Paystack extends SI_Credit_Card_Processors
 {
     const MODE_TEST = 'test';
@@ -225,6 +263,13 @@ class SI_Paystack extends SI_Credit_Card_Processors
                 'currency' => self::get_currency_code($invoice_id),
                 'amount' => self::convert_money_to_cents($payment_amount),
                 'ref' => $invoice_id.'_'.time(),
+                'metadata' => array('custom_fields' => array(
+                    array(
+                        "display_name"=>"Plugin",
+                        "variable_name"=>"plugin",
+                        "value"=>"sprout-invoice"
+                    )
+                )) 
 
             );
 
@@ -282,6 +327,14 @@ class SI_Paystack extends SI_Credit_Card_Processors
             $paystack_response = json_decode(wp_remote_retrieve_body($request));
             if ('success' == $paystack_response->data->status) {
                 // $payment_amount = ( si_has_invoice_deposit( $invoice->get_id() ) ) ? $invoice->get_deposit() : $invoice->get_balance();
+                
+                
+                //PSTK Logger
+                $pk = (self::$api_mode === self::MODE_TEST) ? self::$api_pub_key_test : self::$api_pub_key ;
+                $pstk_logger = new sprout_paystack_plugin_tracker('sprout-invoice',$pk);
+                $pstk_logger->log_transaction_success($reference);
+               
+                //----------------------------------------------------------------
                 $amount_paid    = $paystack_response->data->amount / 100;
 
                 // create new payment
@@ -435,6 +488,12 @@ class SI_Paystack extends SI_Credit_Card_Processors
 
             $paystack_ref     = $event->data->reference;
 
+             //PSTK Logger
+             $pk = (self::$api_mode === self::MODE_TEST) ? self::$api_pub_key_test : self::$api_pub_key ;
+             $pstk_logger_ = new sprout_paystack_plugin_tracker('sprout-invoice',$pk);
+             $pstk_logger_->log_transaction_success($paystack_ref);
+            
+             //----------------------------------------------------------------
             // check if the amount paid is equal to the order amount.
             if ($order_total != $amount_paid) {
                 $order->update_status('on-hold', '');

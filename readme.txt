@@ -1,10 +1,10 @@
 === Paystack Gateway for Sprout Invoices ===
-Contributors: kendysond, dancameron
+Contributors: kendysond, dancameron, lukman008
 Donate link: https://paystack.com/demo
 Tags: sprout, paystack, recurrent payments, nigeria, mastercard, visa, target, Naira, payments, verve
 Requires at least: 3.1
-Tested up to: 4.9.1
-Stable tag: 2.0.0
+Tested up to: 5.2
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,10 @@ The manual installation method involves downloading our payment plugin and uploa
 = Updating =
  
 Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
+
+== Change Log ==
+= 2.1 = 
+Added plugin metrics tracker
 
 == Upgrade Notice ==
  
