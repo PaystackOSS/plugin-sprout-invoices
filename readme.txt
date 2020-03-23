@@ -1,5 +1,5 @@
 === Paystack Gateway for Sprout Invoices ===
-Contributors: kendysond, dancameron, lukman008
+Contributors: paystack, kendysond, dancameron, lukman008
 Donate link: https://paystack.com/demo
 Tags: sprout, paystack, recurrent payments, nigeria, mastercard, visa, target, Naira, payments, verve
 Requires at least: 3.1
