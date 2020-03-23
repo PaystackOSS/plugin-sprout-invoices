@@ -3,7 +3,7 @@ Contributors: paystack, kendysond, dancameron, lukman008, tolukalejaiye
 Donate link: https://paystack.com/demo
 Tags: sprout, paystack, recurrent payments, nigeria, mastercard, visa, target, Naira, payments, verve
 Requires at least: 3.1
-Tested up to: 5.2
+Tested up to: 5.3.2
 Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
