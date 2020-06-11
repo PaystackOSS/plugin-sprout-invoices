@@ -219,7 +219,7 @@ class SI_Paystack extends SI_Credit_Card_Processors
                             ),
                         ),
                     self::API_PUB_KEY_TEST_OPTION => array(
-                        'label' => __('Test Public Key', 'sprout-invoices'),
+                        'label' => __('Testing Public Key', 'sprout-invoices'),
                         'option' => array(
                             'type' => 'text',
                             'default' => self::$api_pub_key_test,
