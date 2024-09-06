@@ -4,7 +4,7 @@ Plugin Name: Sprout Invoices Add-on - Paystack Payments
 Plugin URI: https://paystack.com/
 Description: Accept Payments with Paystack for Sprout Invoices.
 Author: Paystack
-Version: 2.1.2
+Version: 2.1.3
 Author URI: https://paystack.com
 */
 
