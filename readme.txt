@@ -60,7 +60,6 @@ The manual installation method involves downloading our payment plugin and uploa
 Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
 
 == Change Log ==
-
 = 2.1.3 =
 * Compatibility with WordPress 6.8.1 and PHP 8.4.4 
 
@@ -71,7 +70,6 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 Added plugin metrics tracker
 
 == Upgrade Notice ==
-
 = 2.1.3 =
 * Compatibility with WordPress 6.8.1 and PHP 8.4.4
 
