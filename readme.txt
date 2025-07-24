@@ -3,8 +3,8 @@ Contributors: paystack, kendysond, dancameron, lukman008, tolukalejaiye, kaneaha
 Donate link: https://paystack.com/demo
 Tags: sprout, paystack, recurrent payments, nigeria, mastercard, visa, target, Naira, payments, verve
 Requires at least: 3.1
-Tested up to: 6.2.2
-Stable tag: 2.1.2
+Tested up to: 6.8.1
+Stable tag: 2.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,9 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 == Change Log ==
 
+= 2.1.4 =
+* Compatibility with WordPress 6.8.1 and PHP 8.4.4 
+
 = 2.1.2 =
 * Compatibility with WordPress 6.2.2 and PHP 8.1.17 & 7.1.3
 
@@ -68,6 +71,9 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 Added plugin metrics tracker
 
 == Upgrade Notice ==
+
+= 2.1.4 =
+* Compatibility with WordPress 6.8.1 and PHP 8.4.4
 
 = 2.1.2 =
 * Compatibility with WordPress 6.2.2 and PHP 8.1.17 & 7.1.3
