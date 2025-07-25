@@ -18,6 +18,10 @@ jobs:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
           SLUG: paystack-sprout-invoices
+      - name: Debug zip path
+        run: |
+          echo "Path: ${{ steps.deploy.outputs.zip-path }}"
+          ls -lh "${{ steps.deploy.outputs.zip-path }}"
       - name: Upload release asset
         uses: actions/upload-release-asset@v1
         env:
