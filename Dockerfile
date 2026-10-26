@@ -9,7 +9,7 @@ ADD https://downloads.wordpress.org/plugin/sprout-invoices.latest-stable.zip /di
 RUN cd /dist && unzip sprout-invoices.latest-stable.zip && rm sprout-invoices.latest-stable.zip
 
 
-FROM wordpress:php7.2
+FROM wordpress:php8.3
 
 WORKDIR /var/www/html/
 
